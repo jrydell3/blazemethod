@@ -100,8 +100,9 @@ This isn't about putting people out of work. It's about helping good developers 
 **John Rydell** (College Grove, Tennessee)
 - Founder of [PhoneBurner](https://phoneburner.com) (2008)
 - Co-founder of FaxBurner, MeetingBurner
-- Author of "Little Gems for Business and Life"
-- [Mixergy Interview](https://mixergy.com/interviews/rydell-meetingburner-interview/)
+- Author of ["Little Gems for Business and Life"](https://a.co/d/iXmVPnD)
+- Author of ["Life of Jesus Bible Rhymes for Young"](https://www.amazon.com/Life-Jesus-Bible-Rhymes-Young/dp/1953177557)
+- [Featured on Andrew Warner's Mixergy](https://www.youtube.com/watch?v=n5xTlnduFqo)
 
 **Otto Rydell** (Kettering, Ohio)
 - College student who inspired his dad to dive into AI coding
