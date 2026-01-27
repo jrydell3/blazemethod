@@ -35,9 +35,9 @@ We don't vibe code, we BLAZE it right!
 
 ### BRIDGE
 Three words, that's all you gotta know
-Guide, Gate, Guard — let your fire grow
+Guide, Gate, Guard — watch your fire grow
 Build it fast but build it true
-BLAZE is here for me and you
+With love and fire, for me and you
 
 ### FINAL CHORUS (bigger, triumphant)
 So light it up and let it fly
@@ -46,7 +46,7 @@ Sleep well tonight, the Guard's on sight
 We don't vibe code... we BLAZE it right!
 
 ### OUTRO (spoken, over fading music)
-🔥 Guide. Gate. Guard. That's BLAZE, y'all. 🔥
+🔥 Guide. Gate. Guard. With love and fire. 🔥
 
 ---
 
@@ -55,6 +55,7 @@ We don't vibe code... we BLAZE it right!
 **Key phrases that MUST be clear:**
 - "Guide" "Gate" "Guard" (the three pillars)
 - "We don't vibe code, we BLAZE it right" (the manifesto)
+- "With love and fire" (the sign-off)
 - "Three words, that's all you gotta know"
 
 **Vibe check:**
@@ -71,4 +72,4 @@ We don't vibe code... we BLAZE it right!
 
 ---
 
-*"Because BLAZE should be approachable and fun, not scary."*
+*"With love and fire. 🔥♥"*
