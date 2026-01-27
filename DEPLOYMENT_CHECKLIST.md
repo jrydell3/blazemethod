@@ -15,13 +15,21 @@
 
 ### 1. Publish NPM Package (5 minutes)
 
+**First: Enable 2FA on npm**
+1. Go to https://www.npmjs.com/settings/YOUR_USERNAME/twofa
+2. Enable 2FA with authenticator app (Google Authenticator, Authy, etc.)
+3. Save recovery codes
+
+**Then publish:**
 ```bash
 cd /tmp/blazemethod-guide-mcp/packages/guide
-npm login
-npm publish --access public
+npm publish --access public --otp=123456
 ```
+(Replace `123456` with your 6-digit 2FA code)
 
 This reserves `@blazemethod/guide` on npm.
+
+**Alternative:** See `/tmp/npm-publish-instructions.md` for access token method.
 
 ### 2. Configure DNS (5 minutes)
 
