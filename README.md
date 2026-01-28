@@ -104,8 +104,9 @@ This isn't about putting people out of work. It's about helping good developers 
 - Author of ["Life of Jesus Bible Rhymes for Young"](https://www.amazon.com/Life-Jesus-Bible-Rhymes-Young/dp/1953177557)
 - [Presented at LAUNCH Conference](https://www.youtube.com/watch?v=dZxu5iNJOxE)
 
-**Otto Rydell** (Kettering, Ohio)
-- College student who inspired his dad to dive into AI coding
+**Otto Rydell**
+- Previously worked at PricewaterhouseCoopers (PWC)
+- Now works with John's companies
 - Co-creator of The Blaze Method
 
 ---
