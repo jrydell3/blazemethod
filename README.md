@@ -98,6 +98,7 @@ This isn't about putting people out of work. It's about helping good developers 
 ### About the Creators
 
 **John Rydell** (College Grove, Tennessee)
+- BSE Computer Science, UCLA (1993)
 - Founder of [PhoneBurner](https://phoneburner.com) (2008)
 - Co-founder of FaxBurner, MeetingBurner
 - Author of ["Little Gems for Business and Life"](https://a.co/d/iXmVPnD)
