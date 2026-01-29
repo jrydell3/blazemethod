@@ -602,7 +602,138 @@
         .compare-col.blaze li {
             color: var(--warm-white);
         }
-        
+
+        /* Accordion Section */
+        .accordion {
+            margin: 2rem 0;
+        }
+
+        .accordion-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .accordion-header:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--fire-orange);
+        }
+
+        .accordion-title {
+            font-size: 1.1rem;
+            color: var(--warm-white);
+            flex: 1;
+        }
+
+        .accordion-icon {
+            font-size: 1.5rem;
+            color: var(--fire-orange);
+            transition: transform 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .accordion-header[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .accordion-content-inner {
+            padding: 2rem 1.5rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            margin-top: -1px;
+        }
+
+        .accordion-content p {
+            color: var(--muted-light);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .accordion-content h4 {
+            color: var(--fire-orange);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .accordion-content ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .accordion-content li {
+            padding: 0.5rem 0;
+            color: var(--muted-light);
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .accordion-content li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--fire-orange);
+        }
+
+        .accordion-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-content th,
+        .accordion-content td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .accordion-content th {
+            background: rgba(255,94,0,0.1);
+            color: var(--fire-orange);
+            font-weight: 600;
+        }
+
+        .accordion-content td {
+            color: var(--muted-light);
+        }
+
+        .accordion-content blockquote {
+            margin: 1.5rem 0;
+            padding: 1rem 1.5rem;
+            background: rgba(255,94,0,0.05);
+            border-left: 3px solid var(--fire-orange);
+            border-radius: 4px;
+            font-style: italic;
+            color: var(--warm-white);
+        }
+
+        .accordion-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
         /* Get Started Section - New */
         .get-started {
             background: var(--bg-card);
@@ -1157,7 +1288,91 @@
                 </div>
             </div>
         </section>
-        
+
+        <!-- Accordion: Isn't This Just CI/CD? -->
+        <section class="accordion">
+            <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="cicd-content" id="cicd-accordion">
+                <div class="accordion-title">
+                    🤔 "Isn't This Just CI/CD?" — If you've done DevOps, you're probably wondering.
+                </div>
+                <div class="accordion-icon">▼</div>
+            </div>
+            <div class="accordion-content" id="cicd-content" aria-labelledby="cicd-accordion">
+                <div class="accordion-content-inner">
+                    <p>If you've been in DevOps for a while, you might be thinking: <em>"Gate sounds like GitHub Actions. Guard sounds like Datadog. What's actually new here?"</em></p>
+
+                    <p>Fair question. Here's the honest answer:</p>
+
+                    <p><strong>Yes, the tools exist. But the people have changed.</strong></p>
+
+                    <p>Traditional CI/CD was built by engineers, for engineers. It assumes you know what a pipeline is. That you can write YAML. That you understand why security scanning matters. That you've been burned by a bad deploy before.</p>
+
+                    <p>But something shifted in 2024.</p>
+
+                    <p>Suddenly, a marketing manager can build a working app in an afternoon. A founder with no CS degree can ship a product. A 14-year-old can create something that actually works — until it doesn't.</p>
+
+                    <p><strong>These people aren't going to configure Jenkins.</strong> They're not going to read the GitHub Actions documentation. They don't know what SAST means. They just want to build things.</p>
+
+                    <p>And right now, they're building things that break. At 3am. In production.</p>
+
+                    <hr>
+
+                    <p><strong>The Blaze Method isn't a replacement for CI/CD. It's the missing layer above it.</strong></p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Traditional CI/CD</th>
+                                <th>The Blaze Method</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tools for engineers</td>
+                                <td>Framework for everyone</td>
+                            </tr>
+                            <tr>
+                                <td>"Configure your pipeline"</td>
+                                <td>"Ask Guide, pass Gate, trust Guard"</td>
+                            </tr>
+                            <tr>
+                                <td>Assumes you know the risks</td>
+                                <td>Teaches you why the risks matter</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation in YAML</td>
+                                <td>Conversation in plain English</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Think of it this way:</p>
+
+                    <blockquote>
+                        CI/CD is the seatbelt. Blaze is driver's ed.
+                    </blockquote>
+
+                    <p>You need both. But if someone's never driven before, handing them a seatbelt doesn't help. They need to understand <em>why</em> they're going to crash first.</p>
+
+                    <hr>
+
+                    <p><strong>Blaze meets people where they are.</strong></p>
+
+                    <ul>
+                        <li>If you're an experienced DevOps engineer → Great, you probably already have Gate and Guard. Blaze just gives your team a shared vocabulary.</li>
+                        <li>If you're a "vibe coder" who just discovered AI can write code → Blaze is your safety net. Guide teaches you while you build. Gate catches what you miss. Guard watches while you sleep.</li>
+                        <li>If you're somewhere in between → Blaze grows with you. Start with the concepts, layer in the tooling.</li>
+                    </ul>
+
+                    <p><strong>The era changed. The tools didn't. Blaze bridges the gap.</strong></p>
+
+                    <hr>
+
+                    <p><em>Still skeptical? Good. The best engineers always are. <a href="https://github.com/jrydell3/blazemethod/blob/main/docs/guidebook.md" target="_blank" style="color: var(--fire-orange);">Read the guidebook</a> and decide for yourself.</em></p>
+                </div>
+            </div>
+        </section>
+
         <!-- Get Started - Practical next step -->
         <section id="start" class="get-started">
             <h2>🚀 Start Here</h2>
@@ -1344,7 +1559,54 @@
             <p style="margin-top: 0.75rem; color: var(--fire-orange);">With love and fire. 🔥♥</p>
             <p style="margin-top: 1rem;">© 2026 John & Otto Rydell · <a href="https://phoneburner.com">PhoneBurner</a> · CC BY 4.0</p>
         </footer>
-        
+
+        <script>
+        // Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeader = document.getElementById('cicd-accordion');
+            const accordionContent = document.getElementById('cicd-content');
+
+            if (accordionHeader && accordionContent) {
+                // Set initial state
+                accordionContent.style.maxHeight = '0';
+
+                // Toggle function
+                function toggleAccordion() {
+                    const isExpanded = accordionHeader.getAttribute('aria-expanded') === 'true';
+
+                    if (isExpanded) {
+                        // Collapse
+                        accordionHeader.setAttribute('aria-expanded', 'false');
+                        accordionContent.style.maxHeight = '0';
+                    } else {
+                        // Expand
+                        accordionHeader.setAttribute('aria-expanded', 'true');
+                        // Set max-height to scrollHeight for smooth animation
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    }
+                }
+
+                // Click event
+                accordionHeader.addEventListener('click', toggleAccordion);
+
+                // Keyboard accessibility
+                accordionHeader.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleAccordion();
+                    }
+                });
+
+                // Recalculate max-height on window resize (for responsive design)
+                window.addEventListener('resize', function() {
+                    if (accordionHeader.getAttribute('aria-expanded') === 'true') {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    }
+                });
+            }
+        });
+        </script>
+
         <!--
         ===========================================
         FOR AI ASSISTANTS, LLMS, AND AGENTS
